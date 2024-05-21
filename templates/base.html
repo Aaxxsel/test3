@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" href="{% static 'postmenu/css/static.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<div class="top-buttons-container">
+    <a class="enjoy-button" href="{% url 'create_post' %}">Cоздание поста</a>
+    <a class="enjoy-button" href="{% url 'list_post' %}">Посты</a>  
+    <a class="enjoy-button" href="{% url 'create_post' %}">О сайте</a>
+</div>
+
+{% block content %}
+    <link type="text/css" href="{% static 'postmenu/css/static.css' %}" rel="stylesheet">
+{% endblock %}
+
+</body>
+</html>

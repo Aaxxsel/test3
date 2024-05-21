@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+<ul class="posts-list">
+    {% for post in posts %}
+      <li>
+        <p class="post-title">Заголовок:</p>{{ post.title }}
+        <p class="post-content">содержание:</p>{{ post.text }}
+        <p class="post-date">время создания:</p>{{ post.datetime }}
+      </li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
