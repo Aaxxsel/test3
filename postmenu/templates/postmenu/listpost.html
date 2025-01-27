@@ -7,9 +7,9 @@
 <ul class="posts-list">
     {% for post in posts %}
       <li>
-        <p class="post-title">Заголовок:</p>{{ post.title }}
-        <p class="post-content">содержание:</p>{{ post.text }}
-        <p class="post-date">время создания:</p>{{ post.datetime }}
+        <p class="post-title">Название книги:</p>{{ post.title }}
+        <p class="post-content">Описание книги:</p>{{ post.text }}
+        <p class="post-date">время добавления:</p>{{ post.datetime }}
       </li>
     {% endfor %}
   </ul>
